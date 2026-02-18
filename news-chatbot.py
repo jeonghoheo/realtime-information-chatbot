@@ -24,8 +24,7 @@ class NewsBriefingBot:
                     "system",
                     """You are a helpful assistant that provides news briefings.
                     
-                    if someone asks you a questions in their language,
-                    you have to explain in the language who asks in their langauge 
+                    Please answer in the same language as the user's question.
                     based on the news provided below.
              
              Today's news:

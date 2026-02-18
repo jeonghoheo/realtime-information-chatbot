@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![English](https://img.shields.io/badge/Language-English-blue)](#-english-version)
 [![Korean](https://img.shields.io/badge/Language-Korean-red)](#-korean-version)
 [![Russian](https://img.shields.io/badge/Language-Russian-orange)](#-russian-version)
+[![English](https://img.shields.io/badge/Language-English-blue)](#-english-version)
 
 </div>
 
@@ -21,7 +21,7 @@ LangChain의 `RunnableWithMessageHistory`를 활용하여 사용자와의 대화
 * **Real-time Scraping:** `BeautifulSoup4`를 사용하여 Hacker News의 상위 10개 기사를 실시간으로 가져옵니다.
 * **Context Aware:** 대화 내용을 메모리(`InMemoryChatMessageHistory`)에 저장하여 이전 질문의 맥락을 이해하고 답변합니다.
 * **Local LLM Powered:** 외부 API 비용 없이 로컬 환경의 `Ollama (qwen2.5-coder)` 모델을 사용하여 개인정보 유출 걱정 없이 동작합니다.
-* **Korean Briefing:** 영어로 된 기술 뉴스를 한국어 사용자에 맞춰 이해하기 쉽게 설명합니다.
+* **다국어 지원 (Adaptive Language Support)** : 복잡한 영어 기술 뉴스를 사용자가 질문한 언어에 맞춰 번역 및 설명합니다.
 * **Modern Python Stack:** `uv` 패키지 매니저와 `Ruff` 린터를 적용한 최신 파이썬 개발 환경을 따릅니다.
 
 ## 🛠 Tech Stack
@@ -137,7 +137,7 @@ This project is licensed under the MIT License.
 
 Работа на локальной LLM: Использует локальную модель Ollama (qwen2.5-coder), что исключает расходы на внешние API и защищает конфиденциальность данных.
 
-Брифинг на корейском языке: Переводит и объясняет технические новости с английского на понятный корейский язык.
+Адаптивная языковая поддержка: Переводит и объясняет сложные технические новости на языке, который использует пользователь.
 
 Современный стек Python: Проект создан с использованием новейших инструментов разработки: пакетного менеджера uv и линтера Ruff.
 
@@ -243,7 +243,7 @@ Context Aware: Stores conversation history in memory (InMemoryChatMessageHistory
 
 Local LLM Powered: Runs on the local Ollama (qwen2.5-coder) model, ensuring operation without external API costs and protecting data privacy.
 
-Korean Briefing: Translates and explains complex English technical news into easy-to-understand Korean.
+Adaptive Language Support: Translates and explains complex English technical news in the user's preferred language.
 
 Modern Python Stack: Built with the latest Python development environment using the uv package manager and Ruff linter.
 
